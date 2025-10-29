@@ -2,7 +2,7 @@ import streamlit as st
 import random
 
 # 🌸 페이지 기본 설정
-st.set_page_config(page_title=" It Girl Vibe Music Picker ", page_icon="🎧", layout="centered")
+st.set_page_config(page_title="Girl's Vibe Music Picker ", page_icon="🎧", layout="centered")
 
 # 🎀 CSS 꾸미기
 st.markdown("""
@@ -57,8 +57,8 @@ songs = {
         "🌸 Ariana Grande": [("7 rings", "https://www.youtube.com/watch?v=QYh6mYIJG2Y")],
         "💎 BLACKPINK": [("Pink Venom", "https://www.youtube.com/watch?v=gQlMMD8auMs")],
         "🌷 NewJeans": [("ETA", "https://www.youtube.com/watch?v=jOTfBlKSQYY")],
-        "🌙 IU": [("BBIBBI", "https://www.youtube.com/watch?v=nM0xDI5R50E")],
-        "🌻 Taylor Swift": [("The Man", "https://www.youtube.com/watch?v=AqAJLh9wuZ0")]
+        "🌙 IU": [("Coin", "https://youtu.be/86BST8NIpNM?si=ZOsVaBdXmmzvcUov")],
+        "🌻 Taylor Swift": [("Look What You Made Me Do", "https://youtu.be/3tmd-ClpJxA?si=UuMGIvLRNquAAJvv")]
     },
     "🌧 감성 촉촉": {
         "🌸 Ariana Grande": [("pov", "https://www.youtube.com/watch?v=nQJEp-k-ogs")],
@@ -90,7 +90,7 @@ if st.button("💖 추천해줘! 💖"):
 
     st.markdown(f"""
     <div style='text-align:center;'>
-        <h2 style='color:#ff85a2;'>🎧 오늘의 It Girl 추천곡은...</h2>
+        <h2 style='color:#ff85a2;'>🎧 오늘의 Girl's vibe 추천곡은...</h2>
         <h1 style='color:#ff1493;'> 💖 <i>{title}</i> 💖 </h1>
         <p style='color:#f78fb3;'>완전 {mood} mood랑 {singer} vibe에 찰떡이야~ 💅</p>
     </div>
