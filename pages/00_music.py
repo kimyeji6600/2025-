@@ -64,7 +64,7 @@ songs = {
         "🌸 Ariana Grande": [("pov", "https://www.youtube.com/watch?v=nQJEp-k-ogs")],
         "💎 BLACKPINK": [("Hope Not", "https://www.youtube.com/watch?v=JuxtpF6kK6I")],
         "🌷 NewJeans": [("Ditto", "https://www.youtube.com/watch?v=pSUydWEqKwE")],
-        "🌙 IU": [("Love poem", "https://www.youtube.com/watch?v=ZlfEDP7tOyw")],
+        "🌙 IU": [("Love poem", "https://youtu.be/OcVmaIlHZ1o?si=lMtUUQMrgZgL6YXw")],
         "🌻 Taylor Swift": [("Cardigan", "https://www.youtube.com/watch?v=K-a8s8OLBSE")]
     },
     "🌸 여유로운": {
