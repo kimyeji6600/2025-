@@ -70,7 +70,7 @@ songs = {
     "🌸 여유로운": {
         "🌸 Ariana Grande": [("Moonlight", "https://www.youtube.com/watch?v=fLaNnH9i1D0")],
         "💎 BLACKPINK": [("Stay", "https://www.youtube.com/watch?v=FzVR_fymZw4")],
-        "🌷 NewJeans": [("Cool With You", "https://www.youtube.com/watch?v=H9HbdYS2pMg")],
+        "🌷 NewJeans": [("Cool With You", "https://youtu.be/kKsivrgoyDw?si=TeMVP-OT03-YHuND")],
         "🌙 IU": [("Palette", "https://www.youtube.com/watch?v=d9IxdwEFk1c")],
         "🌻 Taylor Swift": [("Willow", "https://www.youtube.com/watch?v=RsEZmictANA")]
     },
