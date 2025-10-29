@@ -1,0 +1,104 @@
+import streamlit as st
+import random
+
+# 🌊 페이지 설정
+st.set_page_config(page_title="💙 Mood Music - Boys 💙", page_icon="🎵", layout="centered")
+
+# 🎨 CSS
+st.markdown("""
+<style>
+body {
+    background: linear-gradient(180deg, #cce7ff 0%, #0d3b66 100%);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+h1, h2, p, select, button, label {
+    text-align: center;
+}
+div.stButton > button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 8px 20px;
+    box-shadow: 0px 3px 7px rgba(30, 144, 255, 0.5);
+}
+div.stButton > button:hover {
+    background-color: #0059b3;
+    transform: scale(1.03);
+}
+</style>
+""", unsafe_allow_html=True)
+
+# 💙 제목
+st.markdown("""
+<h1>💙 Mood Music - Boys 💙</h1>
+<p>오늘 기분에 맞는 남자 가수 노래 추천! 🎧 편하게 즐겨봐요~</p>
+""", unsafe_allow_html=True)
+
+# 🌈 선택지
+moods = ["💪 자신감", "🌧 감성", "🏖 여유", "🎉 신나는", "💔 쓸쓸"]
+singers = ["Justin Bieber", "Ed Sheeran", "BTS Jungkook", "Harry Styles", "Bruno Mars"]
+
+mood = st.selectbox("오늘 기분 선택", moods)
+singer = st.selectbox("가수 선택", singers)
+
+# 💿 추천곡 + 유튜브 링크
+songs = {
+    "💪 자신감": {
+        "Justin Bieber": [("Sorry", "https://www.youtube.com/watch?v=fRh_vgS2dFE")],
+        "Ed Sheeran": [("Shape of You", "https://www.youtube.com/watch?v=JGwWNGJdvx8")],
+        "BTS Jungkook": [("Euphoria", "https://www.youtube.com/watch?v=Q0CbN8sfihY")],
+        "Harry Styles": [("Watermelon Sugar", "https://www.youtube.com/watch?v=E07s5ZYygMg")],
+        "Bruno Mars": [("24K Magic", "https://www.youtube.com/watch?v=UqyT8IEBkvY")]
+    },
+    "🌧 감성": {
+        "Justin Bieber": [("Lonely", "https://www.youtube.com/watch?v=1rZt8tC7mU0")],
+        "Ed Sheeran": [("Perfect", "https://www.youtube.com/watch?v=2Vv-BfVoq4g")],
+        "BTS Jungkook": [("My Time", "https://www.youtube.com/watch?v=TRP0mw0mSpw")],
+        "Harry Styles": [("Falling", "https://www.youtube.com/watch?v=olGSXh5i3wE")],
+        "Bruno Mars": [("When I Was Your Man", "https://www.youtube.com/watch?v=ekzHIouo8Q4")]
+    },
+    "🏖 여유": {
+        "Justin Bieber": [("Peaches", "https://www.youtube.com/watch?v=tQ0yjYUFKAE")],
+        "Ed Sheeran": [("Castle on the Hill", "https://www.youtube.com/watch?v=7Qp5vcuMIlk")],
+        "BTS Jungkook": [("Still With You", "https://www.youtube.com/watch?v=E2DTk6fD0fg")],
+        "Harry Styles": [("Adore You", "https://www.youtube.com/watch?v=yezDEWako8U")],
+        "Bruno Mars": [("Treasure", "https://www.youtube.com/watch?v=nPvuNsRccVw")]
+    },
+    "🎉 신나는": {
+        "Justin Bieber": [("Sorry", "https://www.youtube.com/watch?v=fRh_vgS2dFE")],
+        "Ed Sheeran": [("Sing", "https://www.youtube.com/watch?v=0BbxJj-GXz0")],
+        "BTS Jungkook": [("Dynamite", "https://www.youtube.com/watch?v=gdZLi9oWNZg")],
+        "Harry Styles": [("As It Was", "https://www.youtube.com/watch?v=H5v3kku4y6Q")],
+        "Bruno Mars": [("Uptown Funk", "https://www.youtube.com/watch?v=OPf0YbXqDm0")]
+    },
+    "💔 쓸쓸": {
+        "Justin Bieber": [("Anyone", "https://www.youtube.com/watch?v=KIK3U6LufFI")],
+        "Ed Sheeran": [("Photograph", "https://www.youtube.com/watch?v=nSDgHBxUbVQ")],
+        "BTS Jungkook": [("Still With You", "https://www.youtube.com/watch?v=E2DTk6fD0fg")],
+        "Harry Styles": [("Sign of the Times", "https://www.youtube.com/watch?v=qN4ooNx77u0")],
+        "Bruno Mars": [("When I Was Your Man", "https://www.youtube.com/watch?v=ekzHIouo8Q4")]
+    }
+}
+
+# 💫 추천 버튼
+if st.button("추천해줘!"):
+    pick = random.choice(songs[mood][singer])
+    title, link = pick
+
+    st.markdown(f"""
+    <div style='text-align:center;'>
+        <h2>오늘의 추천곡은...</h2>
+        <h1>🎧 {title} 🎧</h1>
+        <p>{mood} 기분에 {singer} 노래가 딱이에요!</p>
+    </div>
+    """, unsafe_allow_html=True)
+
+    # 🎥 유튜브 미리듣기
+    st.video(link)
+
+# 🌟 푸터
+st.markdown("<hr style='border: 1px solid #00bfff;'>", unsafe_allow_html=True)
+st.markdown("<p style='text-align:center;'>💙 편안하게 즐겨요 💙</p>", unsafe_allow_html=True)
