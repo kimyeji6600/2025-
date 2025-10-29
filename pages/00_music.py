@@ -33,7 +33,7 @@ div.stButton > button:hover {
 
 # 💕 제목
 st.markdown("""
-<h1>💖 It Girl’s Mood Music 💖</h1>
+<h1>💖 Girl’s Mood Music 💖</h1>
 <p>hey babe~ 오늘은 어떤 기분이야? ✨ 네 mood에 찰떡인 곡 골라줄게 💅</p>
 """, unsafe_allow_html=True)
 
