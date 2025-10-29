@@ -62,7 +62,7 @@ songs = {
     },
     "🌧 감성 촉촉": {
         "🌸 Ariana Grande": [("pov", "https://www.youtube.com/watch?v=nQJEp-k-ogs")],
-        "💎 BLACKPINK": [("Hope Not", "https://www.youtube.com/watch?v=JuxtpF6kK6I")],
+        "💎 BLACKPINK": [("Hope Not", "https://youtu.be/l6zMnMMzsss?si=h2WJ9-_dcd9mRCAC")],
         "🌷 NewJeans": [("Ditto", "https://www.youtube.com/watch?v=pSUydWEqKwE")],
         "🌙 IU": [("Love poem", "https://youtu.be/OcVmaIlHZ1o?si=lMtUUQMrgZgL6YXw")],
         "🌻 Taylor Swift": [("Cardigan", "https://www.youtube.com/watch?v=K-a8s8OLBSE")]
