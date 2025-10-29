@@ -2,7 +2,7 @@ import streamlit as st
 import random
 
 # 🌸 페이지 기본 설정
-st.set_page_config(page_title="💋 It Girl Vibe Music Picker 💋", page_icon="🎧", layout="centered")
+st.set_page_config(page_title=" It Girl Vibe Music Picker ", page_icon="🎧", layout="centered")
 
 # 🎀 CSS 꾸미기
 st.markdown("""
@@ -39,7 +39,7 @@ st.markdown("""
 
 # 🌈 선택지
 moods = ["💞 러블리", "🔥 자신감 뿜뿜", "🌧 감성 촉촉", "🌸 여유로운", "🌈 파티 타임"]
-singers = ["💋 Ariana Grande", "💎 BLACKPINK", "🌷 NewJeans", "🌙 IU", "🌻 Taylor Swift"]
+singers = ["🌸 Ariana Grande", "💎 BLACKPINK", "🌷 NewJeans", "🌙 IU", "🌻 Taylor Swift"]
 
 mood = st.selectbox("✨ 오늘의 Mood를 골라줘!", moods)
 singer = st.selectbox("🎤 듣고 싶은 Singer는 누구야?", singers)
@@ -47,35 +47,35 @@ singer = st.selectbox("🎤 듣고 싶은 Singer는 누구야?", singers)
 # 💿 노래 추천 데이터베이스 (+유튜브 링크)
 songs = {
     "💞 러블리": {
-        "💋 Ariana Grande": [("Into You", "https://www.youtube.com/watch?v=1ekZEVeXwek")],
+        "🌸 Ariana Grande": [("Into You", "https://www.youtube.com/watch?v=1ekZEVeXwek")],
         "💎 BLACKPINK": [("As If It’s Your Last", "https://www.youtube.com/watch?v=Amq-qlqbjYA")],
         "🌷 NewJeans": [("Super Shy", "https://www.youtube.com/watch?v=ArmDp-zijuc")],
         "🌙 IU": [("좋은 날", "https://www.youtube.com/watch?v=jeqdYqsrsA0")],
         "🌻 Taylor Swift": [("Lover", "https://www.youtube.com/watch?v=-BjZmE2gtdo")]
     },
     "🔥 자신감 뿜뿜": {
-        "💋 Ariana Grande": [("7 rings", "https://www.youtube.com/watch?v=QYh6mYIJG2Y")],
+        "🌸 Ariana Grande": [("7 rings", "https://www.youtube.com/watch?v=QYh6mYIJG2Y")],
         "💎 BLACKPINK": [("Pink Venom", "https://www.youtube.com/watch?v=gQlMMD8auMs")],
         "🌷 NewJeans": [("ETA", "https://www.youtube.com/watch?v=jOTfBlKSQYY")],
         "🌙 IU": [("BBIBBI", "https://www.youtube.com/watch?v=nM0xDI5R50E")],
         "🌻 Taylor Swift": [("The Man", "https://www.youtube.com/watch?v=AqAJLh9wuZ0")]
     },
     "🌧 감성 촉촉": {
-        "💋 Ariana Grande": [("pov", "https://www.youtube.com/watch?v=nQJEp-k-ogs")],
+        "🌸 Ariana Grande": [("pov", "https://www.youtube.com/watch?v=nQJEp-k-ogs")],
         "💎 BLACKPINK": [("Hope Not", "https://www.youtube.com/watch?v=JuxtpF6kK6I")],
         "🌷 NewJeans": [("Ditto", "https://www.youtube.com/watch?v=pSUydWEqKwE")],
         "🌙 IU": [("Love poem", "https://www.youtube.com/watch?v=ZlfEDP7tOyw")],
         "🌻 Taylor Swift": [("Cardigan", "https://www.youtube.com/watch?v=K-a8s8OLBSE")]
     },
     "🌸 여유로운": {
-        "💋 Ariana Grande": [("Moonlight", "https://www.youtube.com/watch?v=fLaNnH9i1D0")],
+        "🌸 Ariana Grande": [("Moonlight", "https://www.youtube.com/watch?v=fLaNnH9i1D0")],
         "💎 BLACKPINK": [("Stay", "https://www.youtube.com/watch?v=FzVR_fymZw4")],
         "🌷 NewJeans": [("Cool With You", "https://www.youtube.com/watch?v=H9HbdYS2pMg")],
         "🌙 IU": [("Palette", "https://www.youtube.com/watch?v=d9IxdwEFk1c")],
         "🌻 Taylor Swift": [("Willow", "https://www.youtube.com/watch?v=RsEZmictANA")]
     },
     "🌈 파티 타임": {
-        "💋 Ariana Grande": [("Break Free", "https://www.youtube.com/watch?v=L8eRzOYhLuw")],
+        "🌸 Ariana Grande": [("Break Free", "https://www.youtube.com/watch?v=L8eRzOYhLuw")],
         "💎 BLACKPINK": [("BOOMBAYAH", "https://www.youtube.com/watch?v=bwmSjveL3Lc")],
         "🌷 NewJeans": [("How Sweet", "https://www.youtube.com/watch?v=ArmDp-zijuc")],
         "🌙 IU": [("Jam Jam", "https://www.youtube.com/watch?v=TEWE5ihXGNg")],
@@ -91,7 +91,7 @@ if st.button("💖 추천해줘! 💖"):
     st.markdown(f"""
     <div style='text-align:center;'>
         <h2 style='color:#ff85a2;'>🎧 오늘의 It Girl 추천곡은...</h2>
-        <h1 style='color:#ff1493;'>💋 <i>{title}</i> 💋</h1>
+        <h1 style='color:#ff1493;'> 💖 <i>{title}</i> 💖 </h1>
         <p style='color:#f78fb3;'>완전 {mood} mood랑 {singer} vibe에 찰떡이야~ 💅</p>
     </div>
     """, unsafe_allow_html=True)
