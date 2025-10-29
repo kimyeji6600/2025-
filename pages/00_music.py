@@ -78,7 +78,7 @@ songs = {
         "🌸 Ariana Grande": [("Break Free", "https://www.youtube.com/watch?v=L8eRzOYhLuw")],
         "💎 BLACKPINK": [("BOOMBAYAH", "https://www.youtube.com/watch?v=bwmSjveL3Lc")],
         "🌷 NewJeans": [("How Sweet", "https://www.youtube.com/watch?v=ArmDp-zijuc")],
-        "🌙 IU": [("Jam Jam", "https://www.youtube.com/watch?v=TEWE5ihXGNg")],
+        "🌙 IU": [("Jam Jam", "https://youtu.be/KWjDSRdIFgc?si=PJ4rIe5vFDR0dktX")],
         "🌻 Taylor Swift": [("Bejeweled", "https://www.youtube.com/watch?v=b7QlX3yR2xs")]
     }
 }
